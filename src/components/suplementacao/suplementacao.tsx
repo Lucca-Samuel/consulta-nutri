@@ -1,8 +1,6 @@
 "use client";
 
-import { Link } from "lucide-react";
-import { Button } from "../ui/button";
-import Card from "./card.tsx";
+import Card from "./card";
 import "./style.css";
 
 const Suplementacao = () => {
@@ -10,7 +8,6 @@ const Suplementacao = () => {
     <>
       <div className="bg-suplementacao grid items-end bg-white md:pt-40">
         <div className="container-xl grid grid-cols-1 gap-10">
-          
           <Card
             titulo={"Suplementação: Qual a melhor para sua necessidade?"}
             texto={

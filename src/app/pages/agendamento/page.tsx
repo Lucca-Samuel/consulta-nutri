@@ -32,7 +32,7 @@ const Agendamento = () => {
             totalmente online, permitindo que você tenha acesso ao atendimento
             de saúde de forma prática, a qualquer hora e de qualquer lugar.
           </p>
-          <p className="text-verde text-left text-xl mb-5 md:mb-12 md:text-justify">
+          <p className="text-verde mb-5 text-left text-xl md:mb-12 md:text-justify">
             Acesso ilimitado ao chat com seu médico e à gestão do pagamento do
             seu plano mensal.
           </p>
@@ -40,6 +40,7 @@ const Agendamento = () => {
             <Button
               texto={"Agendar Agora"}
               estilo={"flex justify-center items-center h-16 w-42"}
+              funcao={console.log("aperotu botão")}
             />
           </div>
         </div>

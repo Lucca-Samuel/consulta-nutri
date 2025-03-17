@@ -89,7 +89,9 @@ const CadastroClie = () => {
         {/* Botão para registro */}
         <Button
           texto={"Registrar-se"}
-          estilo={"bg-verde botao-verde mt-4 w-full rounded-md py-2"}
+          estilo={
+            "bg-green-500 hover:bg-green-600 text-white mt-4 w-full rounded-md py-2"
+          }
           funcao={handleCadastro}
         />
 
