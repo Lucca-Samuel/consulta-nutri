@@ -1,0 +1,47 @@
+.bg-sobre {
+  background-image: url("../../../public/assets/images/topSobre.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .bg-sobre {
+    background-size: contain; /* Ajusta para 'contain' em telas pequenas */
+    background-position: center; /* Posiciona a imagem no topo */
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .bg-sobre {
+    background-size: contain; /* Mantém 'cover' para telas médias */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 425px) {  
+   
+  .bg-sobre {
+    background-position: top; /* Ajusta a posição para mostrar mais do topo */
+    background-size: contain; /* Mantém a imagem cobrindo toda a tela */
+   
+  }
+
+  .titulo {
+    font-size: 40px;
+    margin-bottom: 10px; 
+    margin-left: 20px;    
+  }
+
+  .imagem {
+    display: none;
+  }
+  p{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+
+}
+

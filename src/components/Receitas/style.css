@@ -1,0 +1,11 @@
+:root {
+  --verde: hsl(151, 23%, 45%);
+  --Laranja: hsl(18, 88%, 67%);
+  --Branco: hsl(0, 0%, 100%);
+}
+
+.botao:hover {
+  background-color: white;
+  color: var(--Laranja);
+  border: 1px fill #f97316;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 425px) {  
+.coluna{    
+    flex-direction:column;
+}
+.imagem {
+  width: 500px;
+  height: 500px;
+}
+}
+

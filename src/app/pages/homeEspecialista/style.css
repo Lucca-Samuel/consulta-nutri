@@ -1,0 +1,22 @@
+@media (max-width: 425px) { 
+.coluna{    
+    flex-direction:column;
+}
+h1 {
+    margin-left: 20px;
+    
+}
+.titulo {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+p{
+    margin-left: 20px;  
+    text-align: justify;
+    margin-right: 10px;   
+}
+.botao {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}

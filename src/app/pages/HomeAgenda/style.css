@@ -1,0 +1,21 @@
+@media (max-width: 425px) {   
+.coluna{    
+    flex-direction:column;
+}
+h1{
+    margin-left: 20px;
+    padding: 5px;
+}
+p {
+    margin-left: 20px;
+}
+.drop {
+    margin-left: 20px;
+}
+label {
+    margin-left: 20px;
+}
+.botao {
+    margin-left: 120px;
+}
+}

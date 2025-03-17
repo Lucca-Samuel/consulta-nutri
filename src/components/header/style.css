@@ -1,0 +1,33 @@
+.divMain {
+  position: absolute;
+}
+
+.sombra {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.568);
+}
+
+.sborda {
+  border: none;
+}
+
+.sborda:active {
+  border: none;
+}
+
+@media (max-width: 425px) {
+  .header {
+    width: 100vw;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: white;
+  }
+}

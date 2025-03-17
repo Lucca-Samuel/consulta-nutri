@@ -1,0 +1,95 @@
+:root {
+  --verde: hsl(151, 23%, 45%);
+  --Laranja: hsl(18, 88%, 67%);
+  --Branco: hsl(0, 0%, 100%);
+}
+.text-orange {
+  color: var(--Laranja);
+}
+.text-verde {
+  color: var(--verde);
+}
+.bg-laranja {
+  background-color: var(--Laranja);
+}
+.bg-verde {
+  background-color: var(--verde);
+}
+
+.planos_mensais_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: auto;
+}
+
+.planos_mensais_container {
+  display: flex;
+  justify-content: center;
+  /* Centraliza o container */
+  align-items: center;
+  gap: 70px;
+  /* Espaçamento fixo entre as caixas */
+  width: 80%;
+  /* Ajuste para permitir mais espaço para as caixas */
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.planos_mensais_box_1,
+.planos_mensais_box_2,
+.planos_mensais_box_3 {
+  background-color: hsl(151, 23%, 45%);
+  color: white;
+  min-width: 17vw;
+  height: 450px;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.text_box {
+  font-size: 23px;
+  font-style: bold;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.text_box_2 {
+  font-size: 13px;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.text_box_3 {
+  margin: 30px 0px 0px 20px;
+  text-align: star;
+}
+
+.text_box_4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text_box_5 {
+  text-align: end;
+  margin: 0px 40px 0px 0px;
+}
+
+.button_planos {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background-color: coral;
+  border-radius: 30px;
+  margin: 10px 0px 0px 45px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media (max-width: 425px) {  
+
+}

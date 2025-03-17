@@ -1,0 +1,44 @@
+:root{--verde: hsl(151, 23%, 45%);
+    --Laranja: hsl(18, 88%, 67%);
+    --Branco: hsl(0, 0%, 100%);}
+
+
+.bg-suplementacao {
+  background-image: url("../../../public/assets/images/bg-suplementacao.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  /* width:calc(70%); */
+}
+
+@media (max-width: 425px) {  
+.bg-suplementacao {
+    /* background-size: contain; Ajusta para 'contain' em telas pequenas */
+    background-position:left; /* Posiciona a imagem no topo */
+    background-repeat: no-repeat;
+    background-size: cover;   
+    
+  }
+
+.cardBg {
+  width: 350px;
+  margin-right: 30px;
+  background-color: rgba(77, 74, 74, 0.295);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.cardTitulo {
+  font-size: 21px;
+  padding-top: 5px;
+  margin-bottom: 3px; 
+  text-align:left;
+
+}
+.cardTexto {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+
+}

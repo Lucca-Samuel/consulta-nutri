@@ -1,0 +1,24 @@
+.bg-medica {
+  background-image: url("/assets/images/medica.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 80px;
+}
+
+@media (max-width: 425px) { 
+  .bg-medica {
+  background-image: url("/assets/images/medica.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 40px;
+  width: auto;
+  height: 400px;
+ 
+}
+  
+.coluna{    
+    flex-direction:column;
+}
+}
