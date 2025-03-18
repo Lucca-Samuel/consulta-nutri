@@ -3,6 +3,10 @@ import Image from "next/image";
 import "./style.css";
 
 const Agendamento = () => {
+  const handleClickTeste = () => {
+    console.log("Botão clicado");
+  };
+
   return (
     <>
       <div className="coluna container mx-auto flex items-center justify-center">
@@ -40,7 +44,7 @@ const Agendamento = () => {
             <Button
               texto={"Agendar Agora"}
               estilo={"flex justify-center items-center h-16 w-42"}
-              funcao={console.log("aperotu botão")}
+              funcao={handleClickTeste}
             />
           </div>
         </div>

@@ -1,9 +1,12 @@
-import { Grid2x2Check } from "lucide-react";
+// import { Grid2x2Check } from "lucide-react";
 import Card from "./components/card";
 
 const BeneficiosQuest = () => {
   return (
-    <div className="my-[50px] flex flex-col items-center justify-center bg-white text-center"id="questionario">
+    <div
+      className="my-[50px] flex flex-col items-center justify-center bg-white text-center"
+      id="questionario"
+    >
       <h1 className="text-verde mb-6 text-4xl font-bold">
         Benefícios do nosso questionário
       </h1>

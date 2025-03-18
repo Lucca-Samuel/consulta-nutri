@@ -30,7 +30,7 @@ const Suplementacao = () => {
                 </div>
               </>
             }
-            button={"Vamos Começar"}
+            button={undefined}
           />
         </div>
       </div>

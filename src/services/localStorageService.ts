@@ -16,25 +16,25 @@ export function cadastrarCliente(email: string, senha: string): Cliente {
 }
 
 export function cadastrarMedico(
-  especialização: string,
+  especializacao: string,
   crm: string,
-  Nome: string,
+  nome: string,
   sobrenome: string,
-  Estado: string,
+  estado: string,
   cidade: string,
-  numero_de_telefone: string,
+  numeroDeTelefone: string,
   email: string,
   senha: string,
 ): Medico {
   const novoMedico: Medico = {
     id: v4(),
-    especialização,
+    especializacao,
     crm,
-    Nome,
+    nome,
     sobrenome,
-    Estado,
+    estado,
     cidade,
-    numero_de_telefone,
+    numeroDeTelefone,
     email,
     senha,
   };

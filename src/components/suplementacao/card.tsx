@@ -10,7 +10,11 @@ const Card = ({ titulo, texto, button }) => {
       </h6>
       <div className="cardTexto text-center text-xl">{texto}</div>
       <div>
-        <Button texto={"Vamos começar"} estilo={"botao-laranja"} />
+        <Button
+          texto={"Vamos começar"}
+          estilo={"botao-laranja"}
+          funcao={button}
+        />
       </div>
     </div>
   );
