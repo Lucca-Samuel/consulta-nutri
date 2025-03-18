@@ -6,7 +6,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import Button from "@/components/Button/button";
 import "@/app/globals.css";
-import { cadastrarCliente } from "@/services/localStorageService";
+import { cadastrarCliente } from "@/services/clienteService"; // Importação atualizada
+import { Cliente } from "@/models/data";
 
 const CadastroClie = () => {
   const [email, setEmail] = useState("");
@@ -16,21 +17,24 @@ const CadastroClie = () => {
   const handleCadastro = () => {
     if (senha !== confirmarSenha) {
       alert("As senhas não são iguais. Por favor, verifique.");
-    } else {
-      // Verificar se o e-mail já está cadastrado
-      const clientes = JSON.parse(localStorage.getItem("clientes") || "[]");
+      return;
+    }
 
-      const emailExistente = clientes.some(
-        (cliente: Cliente) => cliente.email === email,
-      );
+    // Verificar se o e-mail já está cadastrado
+    const clientes = JSON.parse(localStorage.getItem("clientes") || "[]");
+    const emailExistente = clientes.some(
+      (cliente: Cliente) => cliente.email === email,
+    );
 
-      if (emailExistente) {
-        alert("Este e-mail já está cadastrado. Por favor, use outro.");
-        return; // Interrompe o cadastro se o email já existir
-      }
+    if (emailExistente) {
+      alert("Este e-mail já está cadastrado. Por favor, use outro.");
+      return; // Interrompe o cadastro se o email já existir
+    }
 
-      const novoCliente = cadastrarCliente(email, senha);
+    // Cadastra o novo cliente usando o serviço atualizado
+    const novoCliente = cadastrarCliente(email, senha);
 
+    if (novoCliente) {
       alert("Cadastro realizado com sucesso!");
 
       // Limpa os campos
@@ -38,7 +42,10 @@ const CadastroClie = () => {
       setSenha("");
       setConfirmarSenha("");
 
+      // Redireciona para a página de login
       window.location.href = "/pages/login";
+    } else {
+      alert("Erro ao cadastrar. Tente novamente.");
     }
   };
 

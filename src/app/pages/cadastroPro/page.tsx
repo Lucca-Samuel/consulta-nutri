@@ -5,7 +5,8 @@ import InputField from "@/components/inputs/input";
 import Button from "@/components/Button/button";
 import DropdownEspecializacao from "@/components/dropDowMenu/dropDowMenu"; // Importe a função correta
 import { useState } from "react";
-import { cadastrarMedico } from "@/services/localStorageService"; // Importe a função
+import { cadastrarMedico } from "@/services/medicoService"; // Importe a função atualizada
+import { Medico } from "@/models/usuario";
 
 const CadastroPro = () => {
   const [isSecondPartVisible, setIsSecondPartVisible] = useState(false);
@@ -43,7 +44,7 @@ const CadastroPro = () => {
       const medicos = JSON.parse(localStorage.getItem("medicos") || "[]");
 
       const emailExistente = medicos.some(
-        (medico: any) => medico.email === email,
+        (medico: Medico) => medico.email === email,
       );
 
       if (emailExistente) {
@@ -64,7 +65,7 @@ const CadastroPro = () => {
         senha,
       );
 
-      alert("Cadastro realizado com sucesso!");
+      alert(`Médico ${novoMedico.nome} cadastrado com sucesso!`);
 
       // Limpar os campos
       setEspecializacao("");

@@ -11,6 +11,16 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    // "IntrinsicAttributes": false,
+    // "InputFieldProps": false,
+
+    "strict": false,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "ignoreDeprecations": "5.0",
+
     "jsx": "preserve",
     "incremental": true,
     "plugins": [

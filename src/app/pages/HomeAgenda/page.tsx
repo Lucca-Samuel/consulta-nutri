@@ -46,6 +46,7 @@ const HomeAgenda = () => {
           <Button
             texto={"Próximo"}
             estilo={"botao flex justify-center items-center mt-16"}
+            funcao={undefined}
           />
         </div>
 

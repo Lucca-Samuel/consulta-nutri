@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react"; // Adiciona a importação do useState
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,12 +9,25 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 
-const DropdownEspecializacao = ({ items, estilo, texto, value, onChange }) => {
-  const [search, setSearch] = useState(""); // Agora o useState está definido
-  const especializacoes = items;
+interface DropdownEspecializacaoProps {
+  items: string[]; // Lista de itens
+  estilo?: string; // Tornamos estilo opcional
+  texto: string; // Texto padrão
+  value: string; // Valor selecionado
+  onChange: (e: { target: { value: string } }) => void; // Função de mudança
+}
+
+const DropdownEspecializacao = ({
+  items,
+  estilo = "", // Valor padrão para estilo
+  texto,
+  value,
+  onChange,
+}: DropdownEspecializacaoProps) => {
+  const [search, setSearch] = useState("");
 
   // Filtra as especializações com base na busca
-  const filteredEspecializacoes = especializacoes.filter((especializacao) =>
+  const filteredEspecializacoes = items.filter((especializacao) =>
     especializacao.toLowerCase().includes(search.toLowerCase()),
   );
 
@@ -39,7 +52,7 @@ const DropdownEspecializacao = ({ items, estilo, texto, value, onChange }) => {
         {filteredEspecializacoes.map((especializacao, index) => (
           <DropdownMenuItem
             key={index}
-            onClick={() => onChange({ target: { value: especializacao } })} // Passa o valor selecionado para o onChange do componente pai
+            onClick={() => onChange({ target: { value: especializacao } })}
           >
             {especializacao}
           </DropdownMenuItem>

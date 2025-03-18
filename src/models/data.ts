@@ -1,4 +1,4 @@
-import { v4 } from "uuid";
+// import { v4 } from "uuid";
 
 export interface Cliente {
   id: string;
@@ -8,13 +8,13 @@ export interface Cliente {
 
 export interface Medico {
   id: string;
-  especialização: string;
+  especializacao: string;
   crm: string;
-  Nome: string;
+  nome: string;
   sobrenome: string;
-  Estado: string;
+  estado: string;
   cidade: string;
-  numero_de_telefone: string;
+  numeroDeTelefone: string;
   email: string;
   senha: string;
 }
