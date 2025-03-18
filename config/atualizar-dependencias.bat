@@ -3,7 +3,10 @@
 
 
 
-
+npm install @emotion/react@latest
+npm install @emotion/styled@latest
+npm install @fontsource/roboto@latest
+npm install @mui/icons-material@latest
 npm install @mui/material@latest
 npm install @radix-ui/react-dropdown-menu@latest
 npm install @radix-ui/react-menubar@latest
