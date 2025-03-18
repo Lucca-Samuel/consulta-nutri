@@ -8,7 +8,10 @@ interface UsuarioBase {
 }
 
 // Interface para Cliente (adicionando propriedades específicas, se necessário)
-// export interface Cliente extends UsuarioBase {}
+export interface Cliente extends UsuarioBase {
+  telefone?: string; // Exemplo de propriedade específica
+  endereco?: string; // Outro exemplo
+}
 
 // Interface para Medico
 export interface Medico extends UsuarioBase {
