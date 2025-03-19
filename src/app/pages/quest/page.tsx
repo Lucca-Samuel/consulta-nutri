@@ -1,3 +1,5 @@
+"use client";
+
 import CardQuest from "./components/card";
 import Link from "next/link";
 
