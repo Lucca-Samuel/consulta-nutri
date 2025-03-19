@@ -22,7 +22,11 @@ const CardPlanos = ({ titulo, beneficios, valor }) => {
         <p className="text-center text-2xl font-semibold">R$ {valor}</p>
         <p className="text-right">Mensais</p>
       </div>
-      <Button texto={"ASSINE JÁ"} estilo={"mt-auto botao-laranja"} />
+      <Button
+        texto={"ASSINE JÁ"}
+        estilo={"mt-auto botao-laranja"}
+        funcao={undefined}
+      />
     </div>
   );
 };
